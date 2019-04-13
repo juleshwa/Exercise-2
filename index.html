@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Simple Calculator / JSDC Batch 15</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Title -->
+    <div class="title">
+      <h1><span>Simple Calculator</span></h1>
+    </div>
+
+    <!-- Calculator -->
+    <div class="container">
+      <div class="calculator">
+        <!--
+          <div id="calc-display" class="display">
+          0
+        </div>
+        -->
+
+        <!-- Calculator Output & Pad -->
+
+        <form name="calculator">
+          <!-- Calc Output -->
+          <input type="text" name="output" id="calc-output" />
+
+          <!-- Button Number -->
+          <div class="calc-pad">
+            <button type="button" value="1" onclick="calcFormula.value += '1'">
+              1
+            </button>
+            <button type="button" value="2" onclick="calcFormula.value += '2'">
+              2
+            </button>
+            <button type="button" value="3" onclick="calcFormula.value += '3'">
+              3
+            </button>
+            <button type="button" value="4" onclick="calcFormula.value += '4'">
+              4
+            </button>
+            <button type="button" value="5" onclick="calcFormula.value += '5'">
+              5
+            </button>
+            <button type="button" value="6" onclick="calcFormula.value += '6'">
+              6
+            </button>
+            <button type="button" value="7" onclick="calcFormula.value += '7'">
+              7
+            </button>
+            <button type="button" value="8" onclick="calcFormula.value += '8'">
+              8
+            </button>
+            <button type="button" value="9" onclick="calcFormula.value += '9'">
+              9
+            </button>
+            <button type="button" value="0" onclick="calcFormula.value += '0'">
+              0
+            </button>
+
+            <!-- Button Operator -->
+            <button type="button" value="+" onclick="calcFormula.value += '+'">
+              +
+            </button>
+            <button type="button" value="-" onclick="calcFormula.value += '-'">
+              -
+            </button>
+            <button type="button" value="x" onclick="calcFormula.value += '*'">
+              x
+            </button>
+            <button type="button" value=":" onclick="calcFormula.value += '/'">
+              :
+            </button>
+            <button
+              type="button"
+              value="="
+              onclick="calcFormula.value = eval(calcFormula.value)"
+            >
+              =
+            </button>
+            <button type="button" value="c" onclick="calcFormula.value = ''">
+              c
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script>
+      var calcFormula = calculator.output;
+    </script>
+  </body>
+</html>
